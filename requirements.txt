@@ -6,8 +6,14 @@
 #
 absl-py==1.4.0
     # via
+    #   array-record
+    #   etils
     #   tensorboard
+    #   tensorflow-datasets
     #   tensorflow-macos
+    #   tensorflow-metadata
+array-record==0.4.1
+    # via tensorflow-datasets
 astunparse==1.6.3
     # via tensorflow-macos
 cachetools==5.3.1
@@ -16,14 +22,24 @@ certifi==2023.7.22
     # via requests
 charset-normalizer==3.2.0
     # via requests
+click==8.1.7
+    # via tensorflow-datasets
 contourpy==1.1.0
     # via matplotlib
 cycler==0.11.0
     # via matplotlib
+dm-tree==0.1.8
+    # via tensorflow-datasets
+etils[array-types,enp,epath,epy,etqdm,etree]==1.5.2
+    # via
+    #   array-record
+    #   tensorflow-datasets
 flatbuffers==23.5.26
     # via tensorflow-macos
 fonttools==4.42.0
     # via matplotlib
+fsspec==2023.10.0
+    # via etils
 gast==0.4.0
     # via tensorflow-macos
 google-auth==2.22.0
@@ -34,6 +50,8 @@ google-auth-oauthlib==1.0.0
     # via tensorboard
 google-pasta==0.2.0
     # via tensorflow-macos
+googleapis-common-protos==1.61.0
+    # via tensorflow-metadata
 grpcio==1.57.0
     # via
     #   tensorboard
@@ -42,6 +60,8 @@ h5py==3.9.0
     # via tensorflow-macos
 idna==3.4
     # via requests
+importlib-resources==6.1.0
+    # via etils
 keras==2.13.1
     # via tensorflow-macos
 kiwisolver==1.4.4
@@ -60,6 +80,7 @@ numpy==1.24.3
     # via
     #   -r requirements.in
     #   contourpy
+    #   etils
     #   h5py
     #   matplotlib
     #   opt-einsum
@@ -67,6 +88,7 @@ numpy==1.24.3
     #   scipy
     #   seaborn
     #   tensorboard
+    #   tensorflow-datasets
     #   tensorflow-macos
 oauthlib==3.2.2
     # via requests-oauthlib
@@ -82,10 +104,17 @@ pandas==2.0.3
     #   seaborn
 pillow==10.0.0
     # via matplotlib
+promise==2.3
+    # via tensorflow-datasets
 protobuf==4.24.0
     # via
+    #   googleapis-common-protos
     #   tensorboard
+    #   tensorflow-datasets
     #   tensorflow-macos
+    #   tensorflow-metadata
+psutil==5.9.6
+    # via tensorflow-datasets
 pyasn1==0.5.0
     # via
     #   pyasn1-modules
@@ -104,6 +133,7 @@ requests==2.31.0
     # via
     #   requests-oauthlib
     #   tensorboard
+    #   tensorflow-datasets
 requests-oauthlib==1.3.1
     # via google-auth-oauthlib
 rsa==4.9
@@ -117,6 +147,7 @@ six==1.16.0
     #   astunparse
     #   google-auth
     #   google-pasta
+    #   promise
     #   python-dateutil
     #   tensorflow-macos
 tensorboard==2.13.0
@@ -125,14 +156,28 @@ tensorboard-data-server==0.7.1
     # via tensorboard
 tensorflow==2.13.0
     # via -r requirements.in
+tensorflow-datasets==4.9.3
+    # via -r requirements.in
 tensorflow-estimator==2.13.0
     # via tensorflow-macos
 tensorflow-macos==2.13.0
     # via tensorflow
+tensorflow-metadata==1.13.1
+    # via tensorflow-datasets
 termcolor==2.3.0
-    # via tensorflow-macos
+    # via
+    #   tensorflow-datasets
+    #   tensorflow-macos
+toml==0.10.2
+    # via tensorflow-datasets
+tqdm==4.66.1
+    # via
+    #   etils
+    #   tensorflow-datasets
 typing-extensions==4.5.0
-    # via tensorflow-macos
+    # via
+    #   etils
+    #   tensorflow-macos
 tzdata==2023.3
     # via pandas
 urllib3==1.26.16
@@ -146,7 +191,11 @@ wheel==0.41.1
     #   astunparse
     #   tensorboard
 wrapt==1.15.0
-    # via tensorflow-macos
+    # via
+    #   tensorflow-datasets
+    #   tensorflow-macos
+zipp==3.17.0
+    # via etils
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
