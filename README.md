@@ -37,4 +37,3 @@ pip3 install -r requirements.txt
 
 ## 🤝 Authors 
 
-👤 [Cristiano Ferrreira de Oliveir](https://cristiano2132.github.io/)
