@@ -34,6 +34,12 @@ source .venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+If you are using a mac with GPU install the plug-in:
+
+```bash
+python -m pip install tensorflow-metal
+```
+
 
 ## 🤝 Authors 
 
