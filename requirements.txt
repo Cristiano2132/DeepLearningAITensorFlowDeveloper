@@ -161,7 +161,9 @@ tensorflow-datasets==4.9.3
 tensorflow-estimator==2.13.0
     # via tensorflow-macos
 tensorflow-macos==2.13.0
-    # via tensorflow
+    # via
+    #   -r requirements.in
+    #   tensorflow
 tensorflow-metadata==1.13.1
     # via tensorflow-datasets
 termcolor==2.3.0
